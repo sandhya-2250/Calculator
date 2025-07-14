@@ -25,7 +25,7 @@
 
         function calculate() {
             try {
-                const result = (currentExpression);
+                const result = eval(currentExpression);
                 if (isFinite(result)) {
                     display.innerText = result;
                     currentExpression = result.toString();
